@@ -38,7 +38,7 @@ exports.push =  (req, res) => {
         'Content-Type': 'text/plain'
       })
       res.end("NOK : can't processing.")
-      console.log("Can't save !")
+      console.log("Can't save !", err)
     }
   })
 }
