@@ -26,7 +26,7 @@ exports.push =  (req, res) => {
           moderated: false,
           trashed: false
         }
-        console.log(data)
+        console.log(message)
         //souldSaveData
       })
       res.writeHead(200, {
