@@ -1,0 +1,12 @@
+{
+    "service":{
+        "firebase":{
+            "key":{
+                "path":"/home/**.json"
+            },
+            "database":{
+                "name": "feed"
+            }
+        }
+    }
+}
