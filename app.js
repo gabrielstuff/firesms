@@ -28,12 +28,12 @@ function writeNewSMS(uid, body, author) {
   }
 
   // Get a key for a new Post.
-  var newPostKey = firebase.database().ref().child('sms').push().key
+  var newPostKey = admin.database().ref().child('sms').push().key
 
   // Write the new post's data simultaneously in the posts list and the user's post list.
   var updates = {}
   updates['/sms/' + newPostKey] = postData
-  return firebase.database().ref().update(updates)
+  return admin.database().ref().update(updates)
 }
 
 app.get('/', function (req, res) {
